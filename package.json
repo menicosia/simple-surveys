@@ -1,0 +1,18 @@
+{
+  "name": "simple-survey",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Marco Nicosia",
+  "url": "https://github.com/menicosia",
+  "dependencies": {
+    "strftime": "*",
+    "time": "*",
+    "mysql": "*",
+    "serve-static": "*",
+    "finalhandler": "*"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  }
+}

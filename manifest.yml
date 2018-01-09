@@ -1,0 +1,7 @@
+---
+applications:
+- name: simple-surveys
+  buildpack: nodejs_buildpack
+  memory: 128M
+  services:
+    - clickpointDB
