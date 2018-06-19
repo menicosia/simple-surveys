@@ -8,7 +8,7 @@ A `robots.txt` file is included to prevent well-behaved robots from fussing with
 
 ### Example
 
-Visiting http://simple-survey.cfapps.io/simple-demo will present a form with two fields: Name and Organization, plus a submit button. When the user clicks submit, they're presented with a **Thank You** page, and the values are recorded in the database.
+Visiting http://simple-surveys.cfapps.io/index.html?simple-demo will present a form with two fields: Name and Organization, plus a submit button. When the user clicks submit, they're presented with a **Thank You** page, and the values are recorded in the database.
 
 ## Why?
 
