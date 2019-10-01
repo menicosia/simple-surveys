@@ -1,0 +1,7 @@
+---
+applications:
+- name: simple-surveys-prod
+  buildpack: nodejs_buildpack
+  memory: 128M
+  services:
+    - acceptDB
