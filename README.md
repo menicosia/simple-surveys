@@ -41,7 +41,8 @@ If you use the included [manifest.yml](manifest.yml), pushing the app is as simp
 Simple Survey stores a few things in the database.
 
 1. A table of active surveys. Each row expresses the ID, name and active state of a survey. The name is used as the URL path.
-1. A table of survey fields. Each row expresses the ID of a survey, plus the name of the field. An extra field, type, isn't used at this time.
+1. A table of survey fields. Each row expresses the ID of a survey, plus the name of the field.
+  - The current valid field types are: `text` and `wide-text`
 1. A table of submissions. Each row expresses the ID of the survey and a JSON containing the results. The results are **not relational** because I didn't want to create a new table per survey, and surveys can have totally different entry fields.
 
 ### API

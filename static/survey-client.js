@@ -53,10 +53,23 @@ function displayFormElements(path, proto) {
     surveyForm.action = "json/write/" + path ;
     var surveyList = document.getElementById("surveyList") ;
     for (i in proto) {
+        console.debug("Got element " + proto[i][0] + " of type: " + proto[i][1]) ;
         var newLI = document.createElement("LI") ;
-        var newInput = document.createElement("INPUT") ;
-        newInput.setAttribute('type', 'text')
-        newInput.name = proto[i] ;
+        switch (proto[i][1]) {
+        case "text":
+            var newInput = document.createElement("INPUT") ;
+            newInput.setAttribute('type', 'text') ;
+            break ;
+        case "wide-text":
+            var newInput = document.createElement("INPUT") ;
+            newInput.setAttribute('type', 'text') ;
+            newInput.setAttribute('size', '80') ;
+            break ;
+        default:
+            var newInput = document.createElement("INPUT") ; 
+            newInput.setAttribute('type', 'text') ;
+        }
+        newInput.name = proto[i][0] ;
         if (0 == i) {
             newInput.autofocus = true ;
         }

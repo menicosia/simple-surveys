@@ -173,7 +173,7 @@ function getSurveyProtoByID_CB(response) {
         }
         console.info("DB response is: %s" + JSON.stringify(results)) ;
         for (i in results) {
-            surveyFields.push(results[i]["name"]) ;
+            surveyFields.push([ results[i]["name"], results[i]["type"] ]) ;
         }
         response.writeHead(200) ;
         response.end(JSON.stringify(surveyFields)) ;
